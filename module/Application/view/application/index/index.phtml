@@ -1,0 +1,19 @@
+<?php
+
+ $this->headScript() 
+            ->appendFile($this->basePath() . '/js/calcform.js'); 
+
+$form->setAttribute('action', $this->url("application/default",array('controller'=>'index', 'action' => 'calc')));
+ 
+$form->prepare();
+
+echo $this->form()->openTag($form);
+echo $this->formRow($form->get('formula'));
+echo $this->formSubmit($form->get('submit'));
+echo $this->form()->closeTag();
+
+
+?>
+<input type="button" id="crossdomainButton" value="Отправить кроссдоменно" />
+<h4>Результат:</h4>
+<div id="result"></div>
