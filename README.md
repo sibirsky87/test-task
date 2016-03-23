@@ -4,7 +4,6 @@
 Инструкция по разворачиванию
 ------------
 
-        Инструкция по разворачиванию: 
         wget https://github.com/sibirsky87/test-task/archive/master.zip 
         unzip master.zip
         cd  test-task-master/
